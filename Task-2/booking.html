@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - MediCare Health Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <a href="index.html" class="logo">
+            <span>+</span> MediCare
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="booking.html">Appointment</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <div class="container">
+            <p class="small-title">APPOINTMENT</p>
+            <h1>Book an Appointment</h1>
+            <p>
+                Choose your doctor and preferred appointment time.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <form id="bookingForm" class="booking-form">
+
+                <div class="form-section">
+                    <h2>Appointment Details</h2>
+
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor" required>
+                        <option value="">Select a doctor</option>
+                        <option value="Dr. Ananya Rao">Dr. Ananya Rao - General Medicine</option>
+                        <option value="Dr. Arjun Mehta">Dr. Arjun Mehta - Cardiology</option>
+                        <option value="Dr. Meera Nair">Dr. Meera Nair - Pediatrics</option>
+                        <option value="Dr. Kavya Menon">Dr. Kavya Menon - Dermatology</option>
+                        <option value="Dr. Rahul Iyer">Dr. Rahul Iyer - Diagnostics</option>
+                    </select>
+
+                    <label for="appointmentDate">Preferred Date</label>
+                    <input type="date" id="appointmentDate" required>
+
+                    <label for="appointmentTime">Preferred Time</label>
+                    <select id="appointmentTime" required>
+                        <option value="">Select a time</option>
+                        <option value="09:00 AM">09:00 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="03:00 PM">03:00 PM</option>
+                        <option value="04:00 PM">04:00 PM</option>
+                        <option value="05:00 PM">05:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-section">
+                    <h2>Patient Details</h2>
+
+                    <label for="patientName">Full Name</label>
+                    <input
+                        type="text"
+                        id="patientName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                    <label for="patientEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="patientEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="patientPhone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="patientPhone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                    <label for="reason">Reason for Visit</label>
+                    <textarea
+                        id="reason"
+                        rows="4"
+                        placeholder="Briefly describe your reason for the visit"
+                    ></textarea>
+                </div>
+
+                <p id="bookingError" class="form-error"></p>
+
+                <button type="submit" class="btn">
+                    Confirm Appointment
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <div>
+            <a href="index.html" class="logo">
+                <span>+</span> MediCare
+            </a>
+            <p>Quality healthcare for you and your family.</p>
+        </div>
+
+        <p>© 2026 MediCare Health Centre</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

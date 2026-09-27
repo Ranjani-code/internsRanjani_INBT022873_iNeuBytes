@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - MediCare Health Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <a href="index.html" class="logo">
+            <span>+</span> MediCare
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="booking.html">Appointment</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <div class="container">
+            <p class="small-title">OUR MEDICAL TEAM</p>
+            <h1>Find a Doctor</h1>
+            <p>
+                Choose a doctor based on specialty and availability.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="doctor-search">
+                <input
+                    type="text"
+                    id="doctorSearch"
+                    placeholder="Search doctor"
+                >
+
+                <select id="departmentFilter">
+                    <option value="">All Departments</option>
+                    <option value="General Medicine">General Medicine</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                    <option value="Dermatology">Dermatology</option>
+                    <option value="Diagnostics">Diagnostics</option>
+                </select>
+            </div>
+
+            <div id="doctorList" class="doctor-cards">
+
+                <div class="doctor-card doctor-item"
+                     data-name="Dr. Ananya Rao"
+                     data-department="General Medicine">
+                    <div class="doctor-avatar">AR</div>
+                    <h3>Dr. Ananya Rao</h3>
+                    <p>General Medicine</p>
+                    <p>8 years of experience</p>
+                    <p>Mon - Sat</p>
+                    <a href="doctor-details.html?id=1">View Profile</a>
+                </div>
+
+                <div class="doctor-card doctor-item"
+                     data-name="Dr. Arjun Mehta"
+                     data-department="Cardiology">
+                    <div class="doctor-avatar">AM</div>
+                    <h3>Dr. Arjun Mehta</h3>
+                    <p>Cardiology</p>
+                    <p>10 years of experience</p>
+                    <p>Mon - Fri</p>
+                    <a href="doctor-details.html?id=2">View Profile</a>
+                </div>
+
+                <div class="doctor-card doctor-item"
+                     data-name="Dr. Meera Nair"
+                     data-department="Pediatrics">
+                    <div class="doctor-avatar">MN</div>
+                    <h3>Dr. Meera Nair</h3>
+                    <p>Pediatrics</p>
+                    <p>7 years of experience</p>
+                    <p>Mon - Sat</p>
+                    <a href="doctor-details.html?id=3">View Profile</a>
+                </div>
+
+                <div class="doctor-card doctor-item"
+                     data-name="Dr. Kavya Menon"
+                     data-department="Dermatology">
+                    <div class="doctor-avatar">KM</div>
+                    <h3>Dr. Kavya Menon</h3>
+                    <p>Dermatology</p>
+                    <p>6 years of experience</p>
+                    <p>Mon - Fri</p>
+                    <a href="doctor-details.html?id=4">View Profile</a>
+                </div>
+
+                <div class="doctor-card doctor-item"
+                     data-name="Dr. Rahul Iyer"
+                     data-department="Diagnostics">
+                    <div class="doctor-avatar">RI</div>
+                    <h3>Dr. Rahul Iyer</h3>
+                    <p>Diagnostics</p>
+                    <p>9 years of experience</p>
+                    <p>Mon - Sat</p>
+                    <a href="doctor-details.html?id=5">View Profile</a>
+                </div>
+
+            </div>
+
+            <p id="noDoctors" class="no-results">
+                No doctors found.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <div>
+            <a href="index.html" class="logo">
+                <span>+</span> MediCare
+            </a>
+            <p>Quality healthcare for you and your family.</p>
+        </div>
+
+        <p>© 2026 MediCare Health Centre</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
